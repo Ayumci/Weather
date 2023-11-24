@@ -5,8 +5,8 @@ import json
 api_endpoint = "http://api.openweathermap.org/data/2.5/weather"
 api_key = "your_api_key_here"
 
-# Define the location
-location = "London,uk"
+# Ask the user for the location
+location = input("Please enter the location: ")
 
 # Send a GET request to the API endpoint
 response = requests.get(api_endpoint, params={"q": location, "appid": api_key})
